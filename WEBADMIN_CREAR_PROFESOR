@@ -1,0 +1,240 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://certificacion.educatablet.com:9797/MyAccount"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "UP_ID"
+      },
+      "text": "josepha@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "UP_PASSWORD_LOGIN"
+      },
+      "text": "Teacher12345"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "b1"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Panel ERP"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Panel Administrativo"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Configuración de Instituciones"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Profesores"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Crear Profesor"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "Email"
+      },
+      "text": "profesor_05@etc.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "Password"
+      },
+      "text": "Etc123456"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "passwordConfirm"
+      },
+      "text": "Etc123456"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "Identification"
+      },
+      "text": "56746353"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@class='form-horizontal']//select[normalize-space(.)='Activa Inactiva Demo']//option[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@class='form-horizontal']/div/div[1]/div[4]/div"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@class='form-horizontal']/div/div[2]/div[1]/div/select//option[2]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@class='form-horizontal']/div/div[2]/div[2]/div/select//option[5]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "FirstName"
+      },
+      "text": "Matt"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "LastName"
+      },
+      "text": "Musculo"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "SecondName"
+      },
+      "text": "Pequeñin"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "SecondLastName"
+      },
+      "text": "Lola"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "SecondAddress"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "SecondAddress"
+      },
+      "text": "profesor_05@etc.com"
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//span[@id='idClassPeriod']/select//option[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//span[@id='idInstitution']/select//option[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@class='form-horizontal']//select[.='Niveles10 Grado1er Año']//option[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "button.btn.btn-success"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.modal-footer > button.btn"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Regresar"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
